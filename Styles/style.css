@@ -1,0 +1,64 @@
+﻿body 
+{
+    width:850px;
+    margin:0 auto;
+    float:left;
+    background-image:url("Images/background.jpg");
+    background-color:Gray;
+}
+
+
+html 
+{
+    
+    margin:0 auto;
+    padding:0;
+    
+}
+
+.menu 
+{
+    width: 100%;
+	float: left;
+	margin: 0 0 0 0;
+	padding: 0;
+	list-style: none; 
+	border-bottom:1px solid #000000;
+	border-top:1px solid #000000;
+	background-color:#FF3300;
+	}
+	
+
+
+.menu li
+{
+    float:left;
+    display: block;
+	padding:5px 10px;
+	text-decoration: none;
+	font-weight: bold;
+	color:Gray;
+	background-color:#FF3300;
+}
+	
+.menu li:hover 
+{
+    color:Orange;
+    background-color:White;
+}
+
+.banner 
+{
+    width:850px;
+}
+
+.date 
+{
+    text-align:right;
+    background-position:100%;
+    padding-right: .6em;
+    position: absolute;
+    left: 870px;
+    top: 190px;
+}
+

@@ -1,0 +1,53 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<link href="Styles/style.css" rel="Stylesheet" type="text/css" />
+    <title>Term Project</title>
+<!-- Developed by: 
+ Cosmin Gherghel
+ Zachary Schaden
+ Andy
+ Leonard
+ -->
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table>
+    <tr>
+    <td>
+    <div class="banner">
+   
+    <img src="Images/logo.jpeg" alt="logo" width="100%" />
+    
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <div>
+    <ul class="menu">
+    <li><asp:HyperLink ID="HyperLink1" NavigateUrl="~/home.aspx" runat="server">Home</asp:HyperLink></li>
+    <li><asp:HyperLink ID="HyperLink2" NavigateUrl="~/coaches.aspx" runat="server">Coaches</asp:HyperLink></li>
+    <li><asp:HyperLink ID="HyperLink3" NavigateUrl="~/teams.aspx" runat="server">Teams</asp:HyperLink></li>
+    <li><asp:HyperLink ID="HyperLink4" NavigateUrl="~/contactUs.aspx" runat="server">Contact</asp:HyperLink></li>
+    <li><asp:HyperLink ID="HyperLink5" NavigateUrl="~/login.aspx" runat="server">Login</asp:HyperLink></li>
+    <li><asp:Button ID="btnLogout" runat="server" Text="Logout" /></li>
+    </ul>
+    <asp:Label CssClass="date" ID="lblDate" runat="server" Text=""></asp:Label>
+    </div>
+    </td>
+    </tr>
+    </table>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
